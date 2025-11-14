@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app1:
+    build:
+      context: ./app1
+    container_name: python_app1
+    ports:
+      - "5000:5000"
+
+  app2:
+    build:
+      context: ./app2
+    container_name: python_app2
+    ports:
+      - "5001:5000"
